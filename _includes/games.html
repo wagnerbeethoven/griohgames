@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="game-list row">
+    {% for post in site.posts %}
+    {% if post.category == Game %}
+
+    <div class="mb-5 col-6 col-md-4 col-lg-3">
+      <figure class="rounded"><a href="{{ site.url }}{{post.url}}"><img class="img-fluid rounded" src="{{ post.cover }} " alt=""></a></figure>
+      <h3 class="post-title mb-0"><a href="{{ site.url }}{{post.url}}" class="text-decoration-none">{{ post.title }}</a></h3>
+      <div class="game-list-services">
+        {% if post.apple %}<a class="me-2 d-inline-block" href="{{post.apple}}"><img target="blank" class="injectable" title="Apple [new window]" src="{{site.url}}/img/services/apple.svg" alt="Logo - Apple"></a>{% endif %}
+        {% if post.epic %}<a class="me-2 d-inline-block" href="{{post.epic}}"><img target="blank" class="injectable" title="Epic [new window]" src="{{site.url}}/img/services/epic.svg" alt="Logo - Epic"></a>{% endif %}
+        {% if post.ios %}<a class="me-2 d-inline-block" href="{{post.ios}}"><img target="blank" class="injectable" title="iOS [new window]" src="{{site.url}}/img/services/ios.svg" alt="Logo - iOS"></a>{% endif %}
+        {% if post.play %}<a class="me-2 d-inline-block" href="{{post.play}}"><img target="blank" class="injectable" title="Play [new window]" src="{{site.url}}/img/services/play.svg" alt="Logo - Play"></a>{% endif %}
+        {% if post.playstation %}<a class="me-2 d-inline-block" href="{{post.playstation}}"><img target="blank" class="injectable" title="Playstation [new window]" src="{{site.url}}/img/services/playstation.svg" alt="Logo - Playstation"></a>{% endif %}
+        {% if post.steam %}<a class="me-2 d-inline-block" href="{{post.steam}}"><img target="blank" class="injectable" title="Steam [new window]" src="{{site.url}}/img/services/steam.svg" alt="Logo - Steam"></a>{% endif %}
+        {% if post.xbox %}<a class="me-2 d-inline-block" href="{{post.xbox}}"><img target="blank" class="injectable" title="Xbox [new window]" src="{{site.url}}/img/services/xbox.svg" alt="Logo - Xbox"></a>{% endif %}
+        {% if post.twitch %}<a class="me-2 d-inline-block" href="{{post.twitch}}"><img target="blank" class="injectable" title="Twitch [new window]" src="{{site.url}}/img/services/twitch.svg" alt="Logo - Twitch"></a>{% endif %}
+      </div>
+    </div>
+
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

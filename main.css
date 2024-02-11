@@ -1,0 +1,104 @@
+:root {
+    --dark-highlight: #00FFD1;
+}
+
+html[data-bs-theme=dark] a {
+    color: #fff
+}
+
+html[data-bs-theme=dark] a:hover {
+    color: var(--dark-highlight);
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+}
+
+.site-header svg.injectable path {
+    fill: white
+}
+
+.nav-menu {
+    font-size: 1rem;
+}
+
+.game-aside .injectable {
+    width: 1.5rem;
+    height: auto;
+    fill: white;
+}
+
+.site-logo svg.injectable {
+    height: 8rem;
+    width: auto;
+}
+
+.nav-socual svg.injectable {
+    width: 1rem;
+    height: auto;
+}
+
+.game-aside ul li:hover a {
+    color: var(--dark-highlight);
+}
+
+.show-more-link svg.injectable:hover path,
+.site-header a:hover svg.injectable path,
+.site-logo:hover svg path,
+.game-aside ul li:hover svg.injectable path {
+    fill: var(--dark-highlight);
+}
+
+.game-aside,
+.game-info {}
+
+.game-description p {
+    margin-bottom: 3rem;
+}
+
+.game-list figure {
+    overflow: hidden;
+}
+
+.game-list figure img {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.game-list figure:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.game-info h3 {
+    font-weight: 600;
+}
+
+.game-list-services svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #C5C5C5;
+}
+
+.show-more-link {
+    font-size: calc(var(--bs-body-font-size) * 2);
+    padding: 1rem 2rem;
+}
+
+.show-more-link svg.injectable {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(-45deg);
+}
+
+.show-more-link svg.injectable path {
+    fill: #fff
+}
+/* 
+.page-title {
+    font-weight: 700;
+    font-size: 7.5rem;
+    color: #FFFFFF;
+
+} */

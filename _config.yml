@@ -1,0 +1,22 @@
+title: Grioh Games
+email: play@grioh.co
+description: >
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" 
+url: "" 
+social_username: griohgames
+
+plugins:
+  - jekyll-feed
+ 
+ 
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
