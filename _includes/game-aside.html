@@ -1,21 +1,12 @@
 <aside class="game-aside col col-12 col-md-4">
-<ul class="list-group">
-{% if page.apple %}<li class="border-0 list-group-item"><a href="{{page.apple}}"> <img target="blank" title="Apple [new window]" src="{{site.url}}/img/services/apple.svg"  alt="Logo - Apple" class="injectable me-3">Apple Store</a></li>{% endif %}
-{% if page.epic %}<li class="border-0 list-group-item"><a href="{{page.epic}}">  <img target="blank" title="Epic [new window]"  src="{{site.url}}/img/services/epic.svg"alt="Logo - Epic"  class="injectable me-3">Epic Games</a></li>{% endif %}
-{% if page.ios %}<li class="border-0 list-group-item"><a href="{{page.ios}}"><img target="blank" title="iOS [new window]"src="{{site.url}}/img/services/ios.svg" alt="Logo - iOS"class="injectable me-3">iOS Store</a></li>{% endif %}
-{% if page.play %}<li class="border-0 list-group-item"><a href="{{page.play}}">  <img target="blank" title="Play [new window]"  src="{{site.url}}/img/services/play.svg"alt="Logo - Play"  class="injectable me-3">Play Store</a></li>{% endif %}
-{% if page.playstation %}<li class="border-0 list-group-item"><a href="{{page.playstation}}"><img target="blank" title="Playstation [new window]"src="{{site.url}}/img/services/playstation.svg" alt="Logo - Playstation"class="injectable me-3">Playstation Store</a></li>{% endif %}
-{% if page.steam %}<li class="border-0 list-group-item"><a href="{{page.steam}}"> <img target="blank" title="Steam [new window]" src="{{site.url}}/img/services/steam.svg"  alt="Logo - Steam" class="injectable me-3">Steam</a></li>{% endif %}
-{% if page.xbox %}<li class="border-0 list-group-item"><a href="{{page.xbox}}">  <img target="blank" title="Xbox [new window]"  src="{{site.url}}/img/services/xbox.svg"alt="Logo - Xbox"  class="injectable me-3">Xbox</a></li>{% endif %}
-{% if page.twitch %}<li class="border-0 list-group-item"><a href="{{page.twitch}}"> <img target="blank" title="Twitch [new window]" src="{{site.url}}/img/services/twitch.svg" alt="Logo - Twitch" class="injectable me-3">Twitch</a></li>{% endif %}
-</ul>
+    <ul class="list-group">
+        {% if page.apple %}         <li class="border-0 list-group-item"><a title="Play '{{page.title}} - Apple Store[new window]"          href="{{page.apple}}">          <img target="blank" src="{{site.url}}/img/services/apple.svg"           alt="Logo - Apple"          class="injectable me-3">Apple Store</a></li>{% endif %}
+        {% if page.epic %}          <li class="border-0 list-group-item"><a title="Play '{{page.title}} - pic Games Store [new window]"     href="{{page.epic}}">           <img target="blank" src="{{site.url}}/img/services/epic.svg"            alt="Logo - Epic"           class="injectable me-3">Epic Games Store</a></li>{% endif %}
+        {% if page.ios %}           <li class="border-0 list-group-item"><a title="Play '{{page.title}} - iOS App Store [new window]"       href="{{page.ios}}">            <img target="blank" src="{{site.url}}/img/services/ios.svg"             alt="Logo - iOS App Store"  class="injectable me-3">iOS App Store</a></li>{% endif %}
+        {% if page.play %}          <li class="border-0 list-group-item"><a title="Play '{{page.title}} - Google Play [new window]"         href="{{page.play}}">           <img target="blank" src="{{site.url}}/img/services/play.svg"            alt="Logo - Play"           class="injectable me-3">Google Play</a></li>{% endif %}
+        {% if page.playstation %}   <li class="border-0 list-group-item"><a title="Play '{{page.title}} - Playstation Store [new window]"   href="{{page.playstation}}">    <img target="blank" src="{{site.url}}/img/services/playstation.svg"     alt="Logo - Playstation"    class="injectable me-3">Playstation Store</a></li>{% endif %}
+        {% if page.steam %}         <li class="border-0 list-group-item"><a title="Play '{{page.title}} - Steam [new window]"               href="{{page.steam}}">          <img target="blank" src="{{site.url}}/img/services/steam.svg"           alt="Logo - Steam"          class="injectable me-3">Steam</a></li>{% endif %}
+        {% if page.xbox %}          <li class="border-0 list-group-item"><a title="Play '{{page.title}} - Xbox [new window]"                href="{{page.xbox}}">           <img target="blank" src="{{site.url}}/img/services/xbox.svg"            alt="Logo - Xbox"           class="injectable me-3">Xbox</a></li>{% endif %}
+        {% if page.switch %}        <li class="border-0 list-group-item"><a title="Play '{{page.title}} - switch [new window]"              href="{{page.switch}}">         <img target="blank" src="{{site.url}}/img/services/switch.svg"          alt="Logo - Switch"         class="injectable me-3">Switch</a></li>{% endif %}
+    </ul>
 </aside>
-
-
-
-
-
-
-
-
-

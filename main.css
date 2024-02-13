@@ -1,5 +1,10 @@
 :root {
     --dark-highlight: #00FFD1;
+    --button-bg: #1A1A1A;
+    --body-bg-dark: #000;
+    --text: #fff;
+    --input-focus-shadow: 0 0 0 0.25rem hsla(169, 100%, 50%, 0.25);
+
 }
 
 html[data-bs-theme=dark] a {
@@ -82,23 +87,80 @@ body {
 }
 
 .show-more-link {
-    font-size: calc(var(--bs-body-font-size) * 2);
-    padding: 1rem 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 
-.show-more-link svg.injectable {
+.show-more-link a {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.show-more-link a svg.injectable {
     width: 1.5rem;
     height: 1.5rem;
     transform: rotate(-45deg);
 }
 
-.show-more-link svg.injectable path {
+.show-more-link a svg.injectable path {
     fill: #fff
 }
-/* 
-.page-title {
-    font-weight: 700;
-    font-size: 7.5rem;
-    color: #FFFFFF;
 
-} */
+.show-more-link:hover a svg.injectable path {
+    fill: var(--dark-highlight);
+}
+
+.game-media img:hover {
+    cursor: pointer;
+}
+
+.site-footer {
+    font-size: 1rem;
+}
+
+
+.member-list li h5 {
+    font-size: 1rem !important;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+    height: auto;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.form-floating>.form-control-plaintext~label,
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    font-size: 1rem;
+}
+
+.form-creator .form-control:focus {
+    box-shadow: var(--input-focus-shadow);
+    border-color: var(--dark-highlight);
+}
+
+
+.form-creator button {
+    width: 22rem;
+    height: 3.5rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    background: var(--button-bg);
+}
+
+.form-creator button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+}
+
+.game-badge p{
+    font-size: 0.825rem;
+    opacity: 0.5;
+    line-height: 1.5;
+    margin-bottom: 0;
+}

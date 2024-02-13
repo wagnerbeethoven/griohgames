@@ -1,0 +1,23 @@
+---
+layout: page
+title: 'About'
+permalink: about.html
+---
+
+<div class="col-12 col-md-8">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, necessitatibus quaerat. Atque distinctio, repellendus eius earum aperiam sapiente in nisi eveniet ratione praesentium corporis inventore eaque mollitia nostrum animi ullam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, necessitatibus quaerat. Atque distinctio, repellendus eius earum aperiam sapiente in nisi eveniet ratione praesentium corporis inventore eaque mollitia nostrum animi ullam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, necessitatibus quaerat. Atque distinctio, repellendus eius earum aperiam sapiente in nisi eveniet ratione praesentium corporis inventore eaque mollitia nostrum animi ullam.</p>  
+    <div class="py-5"></div>
+    <h3 class="fw-semibold mb-5">Our Team</h3>
+
+    <ul class="row member-list list-unstyled">
+        {% for member in site.data.team.members %}
+        <li class="text-center col-6 col-md-4 col-lg-3 mb-5 pb-5">
+            <img src="{{site.url}}/{{member.image}}" title="{{member.name}}" class="img-fluid round-circle" alt="{{member.alt}}">
+            {% if member.name %}<h4 class="mt-5 mb-3">{{member.name}}</h4>{% endif %}
+            {% if member.job %}<h5>{{member.job}}</h5>{% endif %}
+        </li>
+            {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,33 @@
+members:
+  - name: Diego Alves
+    job: Assistente de programa global
+    image: img/team-member/team-member (1).png
+    alt: alt
+  - name: Martin Castro
+    job: Representante de integração de leads
+    image: img/team-member/team-member (2).png
+    alt: alt
+  - name: Mirella Juan
+    job: Designer de aplicativos
+    image: img/team-member/team-member (3).png
+    alt: alt
+  - name: Ryan Silva
+    job: Diretor de branding 
+    image: img/team-member/team-member (4).png
+    alt: alt
+  - name: Lucas Caldeira
+    job: Consultor de configuração
+    image: img/team-member/team-member (5).png
+    alt: alt
+  - name: Luiz Drumond
+    job: Diretor principal
+    image: img/team-member/team-member (6).png
+    alt: alt
+  - name: Danilo Natharo
+    job: Analista criativo
+    image: img/team-member/team-member (7).png
+    alt: alt
+  - name: Eloá Pinto
+    job: Engenheira de dados
+    image: img/team-member/team-member (8).png
+    alt: alt

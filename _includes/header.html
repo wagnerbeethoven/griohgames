@@ -1,9 +1,13 @@
 <div class="container site-header">
   <header class="d-flex flex-wrap align-items-center justify-content-between py-5">
-<div class="col-12 col-md ">{% include nav-menu.html %}</div>
-<h1 class="text-center col-12 my-5 my-md-0 col-md site-logo"><a href="{{site.url}}" class="site-logo d-inline-flex link-body-emphasis text-decoration-none"><img src="{{site.url}}/img/logo.svg" class="d-block mx-auto injectable" alt="{{site.title}}"></a></h1>
-
-<div class="col-12 col-md text-end">{% include nav-social.html %}
-</div>
+    <div class="col-12 col-md ">{% include nav-menu.html %}</div>
+    <h1 class="text-center col-12 my-5 my-md-0 col-md site-logo">
+      <span class="visually-hidden-focusable">{{site.title}}</span>
+      <a href="{{site.url}}" class="site-logo d-inline-flex link-body-emphasis text-decoration-none">
+        <img src="{{site.url}}/img/logo.svg" class="d-block mx-auto injectable" alt="{{site.title}}">
+      </a>
+    </h1>
+    <div class="col-12 col-md text-end">{% include nav-social.html %}
+    </div>
   </header>
 </div>

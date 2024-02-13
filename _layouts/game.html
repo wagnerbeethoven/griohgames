@@ -3,7 +3,7 @@ layout: default
 ---
 <main>
     <figure class="banner  ratio ratio-16x9 mb-5">
-        <img src="{{page.banner}}" class="img-fluid object-fit-cover">
+        <img src="{{page.banner}}" alt="{{page.banner-alt}}" class="img-fluid object-fit-cover">
     </figure>
 
     <article class="container mx-auto">
@@ -18,10 +18,36 @@ layout: default
             </div>
             {% include game-aside.html %}
         </div>
+        <section class="game-media">
+            <div class="row">
+                <div class="p-1 col-12 col-md-6" data-bs-toggle="modal" data-bs-target="#image-1">
+                    <img class="img-fluid rounded h-100" alt="{{page.image-alt-1}}" src="{{page.image-1}}">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="p-1 col-12 col-md-6" data-bs-toggle="modal" data-bs-target="#image-2"><img class="img-fluid rounded" src="{{page.image-2}}" alt="{{page.image-alt-2}}"></div>
+                        <div class="p-1 col-12 col-md-6" data-bs-toggle="modal" data-bs-target="#image-3"><img class="img-fluid rounded" src="{{page.image-3}}" alt="{{page.image-alt-3}}"></div>
+                        <div class="p-1 col-12 col-md-6" data-bs-toggle="modal" data-bs-target="#image-4"><img class="img-fluid rounded" src="{{page.image-4}}" alt="{{page.image-alt-4}}"></div>
+                        <div class="p-1 col-12 col-md-6" data-bs-toggle="modal" data-bs-target="#image-5"><img class="img-fluid rounded" src="{{page.image-5}}" alt="{{page.image-alt-5}}"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <footer class="game-info d-flex justify-content-between flex-column flex-md-row border-top border-bottom my-5 py-5 ">
             <div class="mb-4 mb-md-0 game-release"><h3>Released</h3>{{page.game-release}}</div>
             <div class="mb-4 mb-md-0 game-release w-50"><h3>Developer</h3><a href="{{page.game-developer-url}}">{{page.game-developer-name}}</a></div>
-            <div class="mb-4 mb-md-0 game-release"><img class="img-fluid" src="{{site.url}}/img/esrb/{{page.badge}}.svg" alt=""><div>
+            <div class="mb-4 mb-md-0 game-badge d-flex align-items-center">
+                <img class="img-fluid" src="{{site.url}}/img/esrb/{{page.badge}}.svg" alt="">
+                {% if page.badge-info %}<p class="ps-0 ps-md-3">{{page.badge-info}}</p>{% endif %}
+            <div>
         </footer>
     </article>
 </main>
+
+<div class="modal fade modal-xl" id="image-1" tabindex="-1" aria-labelledby="Label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content border rounded" title="Close" data-bs-dismiss="modal" aria-label="Close"><div class="ratio ratio-4x3" style="--bs-aspect-ratio: 50%;"><iframe src="{{page.video}}" title="{{page.title}}" frameborder="0" allowfullscreen></iframe></div></div></div></div>
+<div class="modal fade modal-xl" id="image-2" tabindex="-1" aria-labelledby="Label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content border rounded" title="Close" data-bs-dismiss="modal" aria-label="Close"><img class="rounded img-fluid" src="{{page.image-2}}" alt="{{page.image-alt-2}}"></div></div></div>
+<div class="modal fade modal-xl" id="image-3" tabindex="-1" aria-labelledby="Label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content border rounded" title="Close" data-bs-dismiss="modal" aria-label="Close"><img class="rounded img-fluid" src="{{page.image-3}}" alt="{{page.image-alt-3}}"></div></div></div>
+<div class="modal fade modal-xl" id="image-4" tabindex="-1" aria-labelledby="Label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content border rounded" title="Close" data-bs-dismiss="modal" aria-label="Close"><img class="rounded img-fluid" src="{{page.image-4}}" alt="{{page.image-alt-4}}"></div></div></div>
+<div class="modal fade modal-xl" id="image-5" tabindex="-1" aria-labelledby="Label" aria-hidden="true"><div class="modal-dialog"><div class="modal-content border rounded" title="Close" data-bs-dismiss="modal" aria-label="Close"><img class="rounded img-fluid" src="{{page.image-5}}" alt="{{page.image-alt-5}}"></div></div></div>
