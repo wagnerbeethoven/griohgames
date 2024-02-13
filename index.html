@@ -1,12 +1,60 @@
 ---
 layout: default
-title: 'Home 🐢 Grioh Games '
+title: Home
 ---
 
-<h2 class="visually-hidden-focusable">Games</h2>
-{% include games.html %}
+<h2 class="visually-hidden-focusable">New content</h2>
+<section class="banner-home container">
+    <div class="row">
+        <div class="banner-major-column col-12 col-md col-lg-8">
+            {% assign MainGame = "MainGame" %}
+            {% assign posts_recentes = site.categories[MainGame] | reverse | limit: 1 %}
+            {% for post in posts_recentes %}
+            <div class="position-relative" title="{{post.title}} - {{post.banner-subtitle-text}} | {{post.banner-button-text}}">
+                <a href="{{post.url}}" class="stretched-link text-decoration-none">
+                    <figure class="banner-image">
+                        <img alt="{{post.image-alt-1}}" src="{{post.image-1}}" class="d-block w-100 img-fluid object-fit-cover rounded ">
+                        <figcaption>
+                            <span class=" btn btn-primary btn-dark d-flex align-items-center justify-content-center">
+                                {{post.banner-button-text}} <img src="{{site.url}}/img/arrow.svg" class="injectable ms-3">
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <h3 class="fw-semibold">{{post.title}}</h3>
+                    <p>{{post.banner-subtitle-text}}</p>
+                </a>    
+            </div>
+            {% endfor %}
+        </div>
+        <div class="banner-minor-column col-12 col-md col-lg-4">
+            {% assign MinorGame = "MinorGame" %}
+            {% assign posts_recentes = site.categories[MinorGame] | reverse | limit: 2 %}
+            {% for post in posts_recentes %}
+            
+            <div class="position-relative" title="{{post.title}} - {{post.banner-subtitle-text}} | {{post.banner-button-text}}">
+                <a href="{{post.url}}" class="stretched-link text-decoration-none">
+                    <figure class="banner-image">
+                        <img s alt="{{post.image-alt-1}}" src="{{post.image-1}}" class="d-block w-100 img-fluid object-fit-cover rounded ">
+                        <figcaption>
+                            <span class=" btn btn-primary btn-dark d-flex align-items-center justify-content-center">
+                                {{post.banner-button-text}} <img src="{{site.url}}/img/arrow.svg" class="injectable ms-3">
+                            </span>
+                        </figcaption>
+                    </figure>
+                    <h3 class="fw-semibold">{{post.title}}</h3>
+                    <p>{{post.banner-subtitle-text}}</p>
+                </a>    
+            </div>
+            <div class="my-5"></div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="mt-5 pt-5">
+    <h2 class="visually-hidden-focusable">Games</h2>
+    {% include game-list.html %}
+</section>
 <div class="container show-more-link text-center">
-    <a class=" btn btn-primary btn-dark d-flex align-items-center justify-content-center" href="#" role="button">Show more
-        <img src="{{site.url}}/img/arrow.svg" class="injectable ms-3">
-    </a>
+    <a class=" btn btn-primary btn-dark d-flex align-items-center justify-content-center" href="#" role="button">Show more <img src="{{site.url}}/img/arrow.svg" class="injectable ms-2"></a>
 </div>

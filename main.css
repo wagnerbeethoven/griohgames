@@ -1,10 +1,9 @@
 :root {
     --dark-highlight: #00FFD1;
     --button-bg: #1A1A1A;
-    --body-bg-dark: #000;
+    --bs-body-bg: #000;
     --text: #fff;
     --input-focus-shadow: 0 0 0 0.25rem hsla(169, 100%, 50%, 0.25);
-
 }
 
 html[data-bs-theme=dark] a {
@@ -55,8 +54,6 @@ body {
     fill: var(--dark-highlight);
 }
 
-.game-aside,
-.game-info {}
 
 .game-description p {
     margin-bottom: 3rem;
@@ -123,22 +120,21 @@ body {
     font-size: 1rem !important;
 }
 
-.form-floating>.form-control,
-.form-floating>.form-control-plaintext,
-.form-floating>.form-select {
+.form-floating>.form-control {
     height: auto;
     line-height: 1.5;
     font-size: 1.5rem;
+    width: 360px;
+    transition: width .3s ease-in-out;
 }
 
-.form-floating>.form-control-plaintext~label,
-.form-floating>.form-control:focus~label,
-.form-floating>.form-control:not(:placeholder-shown)~label,
-.form-floating>.form-select~label {
+.form-floating>.form-control:not(:placeholder-shown)~label {
     font-size: 1rem;
 }
 
+
 .form-creator .form-control:focus {
+    width: 100%;
     box-shadow: var(--input-focus-shadow);
     border-color: var(--dark-highlight);
 }
@@ -158,9 +154,70 @@ body {
     fill: #fff;
 }
 
-.game-badge p{
+.game-badge p {
     font-size: 0.825rem;
     opacity: 0.5;
     line-height: 1.5;
     margin-bottom: 0;
+}
+
+.lang svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.modal-lang .modal-body {
+    font-size: 1rem
+}
+
+.modal-lang .btn-close {
+    background-size: 1rem;
+}
+
+.banner-home h3 {
+    margin: 2rem 0 1.5rem;
+    font-size: 4rem;
+
+}
+
+.banner-home .banner-major-column img {
+    height: 34rem;
+}
+
+.banner-home .banner-minor-column h3 {
+    font-size: 3rem;
+    margin: 1rem 0;
+
+}
+
+.banner-image {
+    position: relative
+}
+
+.banner-home p {
+    color: var(--dark-highlight);
+}
+
+.banner-home figcaption {
+    bottom: 1rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.banner-home figcaption svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+.banner-home figcaption svg path {
+    fill: #fff;
+}
+
+.banner-home figcaption:hover svg path {
+    fill: var(--dark-highlight);
+}
+
+.page-subtitle {
+    color: var(--dark-highlight);
 }

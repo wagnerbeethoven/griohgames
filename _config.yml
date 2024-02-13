@@ -10,7 +10,18 @@ social_username: griohgames
 
 plugins:
   - jekyll-feed
- 
+
+
+permalink: :title:output_ext
+
+service-title-apple: Play on Apple Store
+service-title-epic: Play on Epic Games Store
+service-title-ios: Play on iOS App Store
+service-title-play: Play on Google Play
+service-title-playstation: Play on Playstation Store
+service-title-steam: Play on Steam
+service-title-xbox: Play on Xbox
+service-title-twitch: Play on Switch
  
 compress_html:
   clippings: all
